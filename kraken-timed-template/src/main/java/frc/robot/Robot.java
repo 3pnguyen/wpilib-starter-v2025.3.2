@@ -7,20 +7,18 @@ import com.ctre.phoenix6.configs.TalonFXConfiguration;
 import com.ctre.phoenix6.configs.TalonFXConfigurator;
 import com.ctre.phoenix6.hardware.TalonFX;
 
-
 public class Robot extends TimedRobot {
-private TalonFX Skibidi;
+  private TalonFX motor = new TalonFX();
+
   public Robot() {
-   
   }
 
   @Override
   public void teleopInit() {
-
   }
 
   @Override
   public void teleopPeriodic() {
-    Skibidi.set(0.67); 
+    motor.set(0.5);
   }
 }
